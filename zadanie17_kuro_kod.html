@@ -1,7 +1,56 @@
 <html>
   <body>
      <textarea cols="90" rows="24"> 
-       
+       <html>
+  <body>
+    <script>
+    function okno_zamknij_kuro() 
+    { 
+      window.close() 
+    } 
+    </script>
+    <h1>1. Wymień cztery sposoby wyprowadzania danych w JS, </h1>
+    
+    - z użyciem dokument.write() <br>
+    - z użyciem okienka alert() <br>
+    - do okienek formularza <br>
+    - do tabeli <br>
+    
+    <h1>2. Czym jest funkcja w JS, omów przy użyciu 4 podpunktów? </h1>
+    
+    - Jest to zbiór zgrupowanych instrukcji, które możemy uruchamiać  poprzez podanie ich nazwy, <br>
+    - Każda funkcja po wywołaniu wykonuje swój wewnętrzny kod, <br>
+    - Funkcja może mieć argumenty, które wchodzą do wnętrza funkcji i są tam przetwarzane np. suma_kry(a, b), <br>
+    - Może(nie zawsze) zwrócić  obliczoną wartość  zapisaną po słowie kluczowym <b>return. </b><br>
+    
+    <h1>3. Omów metody getElementsByName, <b>getElementById, getElementByTagName </b>(może być w postaci tabeli), </h1>
+    
+    <table border="1">
+      <tr>
+        <th><b>Metoda</b></th>
+        <th><b>Opis</b></th>
+      </tr>
+      <tr>
+        <th>getElementById("id ")</th>
+        <th>getElementByTagName("znacznik ")</th>
+        <th>getElementByName("nazwa")</th>
+      </tr>
+      <tr>
+        <th>dostęp do wszystkich elementów o konkretnej<br> wartości atrybutu id</th>
+        <th>dostęp do wszystkich elementów o typie <br>znacznika, np. P lub DIV</th>
+        <th>dostęp do wszystkich elementów o konkretnej<br> wartości atrybutu</th>
+      </tr>
+    </table>
+    
+    <h1>4. Omów właściwości  <b>innerHTML  innerText  className.</b> (każdą osobno) </h1>
+
+    - <b>innerHTML </b> – jest to właściwość, która umożliwia odczyt, zmodyfikowanie, wstawienie, albo usunięcie kodu HTML z danego elementu HTML np. w tabeli,<br> 
+    - <b>innerText </b> – umożliwia określenie ciągu znaków który zostanie umieszczony w elemencie,  <br>
+    - <b>className </b> – umożliwia określenie klasy CSS użytej do prezentacji elementu.<br>
+
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_kuro()"/> 
+  </body>
+</html>
      </textarea>
   </body>
 </html>
