@@ -1,7 +1,51 @@
 <html> 
    <body> 
      <textarea cols="90" rows="24"> 
-
+<!DOCTYPE html> 
+<head> 
+   <title> Użycie fukcji </title> 
+   <meta charset="utf-8"> 
+</head> 
+<body> 
+   <div style="color:navy;font-size:50px;"> 
+   <script language="JavaScript"> 
+   var a=parseFloat(prompt("a=","")); 
+   var b=parseFloat(prompt("b=","")); 
+   var c; 
+   var d; 
+   function suma_kur(a, b) { 
+      return a + b; 
+   } 
+   function odejmowanie_kur(a, b) { 
+      return a - b; 
+   } 
+   function mnozenie_kur(a, b) { 
+      return a * b; 
+   } 
+   function od_kwadratu_a_kur(a) { 
+    return a*a; 
+   } 
+   function od_kwadratu_b_kur(b) { 
+      return b*b; 
+   } 
+   function reszta_z_dzielenia_a_przez_b(a,b){ 
+      return a%b; 
+   } 
+   document.write("suma="+suma_kur(a,b)+"<br>"); 
+   document.write("odejmowanie="+odejmowanie_kur(a,b)+"<br>"); 
+   document.write("mnozenie="+mnozenie_kur(a,b)+"<br>"); 
+   document.write("do_kwadratu_a="+od_kwadratu_a_kur(a)+"<br>"); 
+   document.write("do_kwadratu_b="+od_kwadratu_b_kur(b)+"<br>"); 
+   document.write("reszta z dzielenia a przez b="+reszta_z_dzielenia_a_przez_b(a,b)+"<br>"); 
+   function okno_zamknij_kuro() 
+   { 
+      window.close() 
+   } 
+   </script> 
+</div> 
+   <input type="button" value="zamknij okno" onclick="okno_zamknij_kuro()"/> 
+</body> 
+</html>
      </textarea>
    </body>
 </html>
