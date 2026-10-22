@@ -4,35 +4,35 @@
             Przykład obliczenia Y1 i Obwód walca 
         </title> 
         <script language="JavaScript"> 
-function Y1_kur(d,x) 
+function Y1(d,x) 
     { 
         c = parseFloat(d) 
         d = parseFloat(x) 
-        Y1_kur = 3 * Math.pow(c, 6 / 8) 
-        document.getElementsByName('y1')[0].value = Y1_kur.toFixed(2); /* na dokument */ 
-        alert("Y1=" + Y1_kur.toFixed(2)); /*do okna Alert */ 
-        pokaz1.innerHTML = "Y1=" + Y1_kur.toFixed(2) + "<br>"; /* do tabeli */ 
+        Y1 = 3 * Math.pow(c, 6 / 8) 
+        document.getElementsByName('y1')[0].value = Y1.toFixed(2); /* na dokument */ 
+        alert("Y1=" + Y1.toFixed(2)); /*do okna Alert */ 
+        pokaz1.innerHTML = "Y1=" + Y.toFixed(2) + "<br>"; /* do tabeli */ 
     } 
-    function Y2_kur(d, x) { 
+    function Y2(d, x) { 
         c = parseFloat(d) 
         d = parseFloat(x) 
         c = (c * Math.PI) / 180; 
         var cos = Math.cos(c) 
         var sin = Math.sin(c) 
-        Y2_kur = 2 * cos + 3 * sin; 
-        document.getElementsByName('y2')[0].value = Y2_kur.toFixed(2); 
-        alert("Y2=" + Y2_kur.toFixed(2)); 
-        pokaz2.innerHTML = "Y2=" + Y2_kur.toFixed(2) + "<br>"; 
+        Y2 = 2 * cos + 3 * sin; 
+        document.getElementsByName('y2')[0].value = Y2.toFixed(2); 
+        alert("Y2=" + Y2.toFixed(2)); 
+        pokaz2.innerHTML = "Y2=" + Y2.toFixed(2) + "<br>"; 
     } 
     function Y3(d, x) { 
         x1 = parseFloat(d) 
         x2 = parseFloat(x) 
         var f = Math.pow(x1, 5); 
         var e = 2 * Math.pow(x2, 4); 
-        Y3_w = Math.pow(f + 2*e * Math.abs(x1 - x2), 1 / 3); 
-        document.getElementsByName('y3')[0].value = Y3_w.toFixed(2); 
-        alert("Y3=" + Y3_w.toFixed(2)); 
-        pokaz3.innerHTML = "Y3=" + Y3_w.toFixed(2) + "<br>"; 
+        Y3 = Math.pow(f + 2*e * Math.abs(x1 - x2), 1 / 3); 
+        document.getElementsByName('y3')[0].value = Y3.toFixed(2); 
+        alert("Y3=" + Y3.toFixed(2)); 
+        pokaz3.innerHTML = "Y3=" + Y3.toFixed(2) + "<br>"; 
     } 
 function okno_zamknij_kuro() 
 { 
@@ -44,9 +44,9 @@ window.close()
         Obliczanie Y1, Y2 i Y3 
         <br> <br> 
         <form name="formularz" action="" 
-            onsubmit="Y1_kur(this.x1.value,this.x2.value); 
-            Y2_kur(this.x1.value,this.x2.value); 
-            Y3_kur(this.x1.value,this.x2.value);return false"> 
+            onsubmit="Y1(this.x1.value,this.x2.value); 
+            Y2(this.x1.value,this.x2.value); 
+            Y3(this.x1.value,this.x2.value);return false"> 
             Podaj x1= 
             <input size="6" name="x1"> 
             Podaj x2= 
