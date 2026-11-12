@@ -1,0 +1,72 @@
+<html>
+  <body>
+    <textarea hight="90" weight="24">
+      <!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body bgcolor="lightblue">
+
+<div style="color:red;font-size:46px;">
+<script type="text/javascript">
+
+function okno_zamknij_kuro()
+{
+window.close();
+}
+
+var autobus_kurowska = {
+    ile_pasazerow: '40',
+    kolor: 'żółty',
+    marka: 'mercedes',
+    pokaz: function()
+    {
+        document.write("Dane obiektu autobus<br>");
+        document.write("Liczba pasażerów: " + this.ile_pasazerow + "<br>");
+        document.write("Kolor: " + this.kolor + "<br>");
+        document.write("Marka: " + this.marka + "<br>");
+    }
+};
+
+autobus_kurowska.miesiac_urodzenia = 12;
+
+autobus_kurowska.pokaz_nazwisko_kurowska = function()
+{
+    document.write("Nazwisko: Kurowska<br>");
+};
+
+autobus_kurowska.pokaz();
+autobus_kurowska.pokaz_nazwisko_kurowska();
+
+document.write("Numer w dzienniku: 8<br>");
+document.write("Miesiąc urodzenia: " + autobus_kurowska.miesiac_urodzenia + "<br>");
+document.write("Dzień urodzenia: 21<br>");
+
+</script>
+</div>
+
+<br>
+
+<div style="color:blue;font-size:46px;">
+Mój numer w dzienniku to 8.<br>
+Obiekt to autobus.<br>
+Pola:<br>
+ile_pasazerow<br>
+kolor<br>
+marka<br>
+miesiac_urodzenia<br>
+Metody:<br>
+pokaz<br>
+pokaz_nazwisko_kurowska
+</div>
+
+<input type="button" value="Zamknij okno" onclick="okno_zamknij_kuro()">
+
+</body>
+</html>
+    </textarea>
+  </body>
+</html>
